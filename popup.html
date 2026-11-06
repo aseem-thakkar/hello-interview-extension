@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="popup.css" />
+    <title>Reading width</title>
+  </head>
+  <body>
+    <header>
+      <h1>Reading width</h1>
+      <output id="readout">…</output>
+    </header>
+
+    <input
+      id="slider"
+      type="range"
+      min="900"
+      max="4800"
+      step="25"
+      aria-label="Content width in pixels"
+    />
+
+    <div class="scale" aria-hidden="true">
+      <span>narrow</span>
+      <span>4K</span>
+    </div>
+
+    <div class="actions">
+      <button id="fill" type="button">Fill screen</button>
+      <button id="reset" type="button" class="ghost">Reset</button>
+    </div>
+
+    <p class="hint">
+      Updates open tabs live. On lesson pages, Space or plain K toggles
+      narration; Shift+&lt; / Shift+&gt; adjusts speed in 0.25x steps. Cmd+K
+      stays available for search, including in Reading Mode. Reload after
+      installing or updating.
+    </p>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
